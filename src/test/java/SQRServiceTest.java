@@ -8,7 +8,7 @@ import ru.netology.Homework_5.SQRCalc.SQRService;
 public class SQRServiceTest {
 
     @ParameterizedTest
-    @CsvFileSource(files = "src/test/resources/checkSases.csv")
+    @CsvFileSource(files = "src/test/resources/checkCases.csv")
     public void testCheckCases(int min, int max, int expected) {
         SQRService service = new SQRService();
         int actual = service.SQRCalc(min, max);
